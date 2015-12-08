@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07A99C1C1C1719B3004FF8F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A99C1B1C1719B3004FF8F9 /* AppDelegate.swift */; };
+		07A99C1E1C1719B3004FF8F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A99C1D1C1719B3004FF8F9 /* Assets.xcassets */; };
+		07A99C211C1719B3004FF8F9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A99C1F1C1719B3004FF8F9 /* MainMenu.xib */; };
+		07A99C2C1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A99C2B1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07A99C281C1719B3004FF8F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A99C101C1719B3004FF8F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07A99C171C1719B3004FF8F9;
+			remoteInfo = WakaTimeAPIClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07A99C181C1719B3004FF8F9 /* WakaTimeAPIClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakaTimeAPIClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A99C1B1C1719B3004FF8F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07A99C1D1C1719B3004FF8F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07A99C201C1719B3004FF8F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		07A99C221C1719B3004FF8F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A99C271C1719B3004FF8F9 /* WakaTimeAPIClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakaTimeAPIClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A99C2B1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakaTimeAPIClientTests.swift; sourceTree = "<group>"; };
+		07A99C2D1C1719B3004FF8F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07A99C151C1719B3004FF8F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07A99C241C1719B3004FF8F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07A99C0F1C1719B3004FF8F9 = {
+			isa = PBXGroup;
+			children = (
+				07A99C1A1C1719B3004FF8F9 /* WakaTimeAPIClient */,
+				07A99C2A1C1719B3004FF8F9 /* WakaTimeAPIClientTests */,
+				07A99C191C1719B3004FF8F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07A99C191C1719B3004FF8F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07A99C181C1719B3004FF8F9 /* WakaTimeAPIClient.app */,
+				07A99C271C1719B3004FF8F9 /* WakaTimeAPIClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07A99C1A1C1719B3004FF8F9 /* WakaTimeAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				07A99C1B1C1719B3004FF8F9 /* AppDelegate.swift */,
+				07A99C1D1C1719B3004FF8F9 /* Assets.xcassets */,
+				07A99C1F1C1719B3004FF8F9 /* MainMenu.xib */,
+				07A99C221C1719B3004FF8F9 /* Info.plist */,
+			);
+			path = WakaTimeAPIClient;
+			sourceTree = "<group>";
+		};
+		07A99C2A1C1719B3004FF8F9 /* WakaTimeAPIClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				07A99C2B1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift */,
+				07A99C2D1C1719B3004FF8F9 /* Info.plist */,
+			);
+			path = WakaTimeAPIClientTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07A99C171C1719B3004FF8F9 /* WakaTimeAPIClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A99C301C1719B3004FF8F9 /* Build configuration list for PBXNativeTarget "WakaTimeAPIClient" */;
+			buildPhases = (
+				07A99C141C1719B3004FF8F9 /* Sources */,
+				07A99C151C1719B3004FF8F9 /* Frameworks */,
+				07A99C161C1719B3004FF8F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WakaTimeAPIClient;
+			productName = WakaTimeAPIClient;
+			productReference = 07A99C181C1719B3004FF8F9 /* WakaTimeAPIClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07A99C261C1719B3004FF8F9 /* WakaTimeAPIClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A99C331C1719B3004FF8F9 /* Build configuration list for PBXNativeTarget "WakaTimeAPIClientTests" */;
+			buildPhases = (
+				07A99C231C1719B3004FF8F9 /* Sources */,
+				07A99C241C1719B3004FF8F9 /* Frameworks */,
+				07A99C251C1719B3004FF8F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07A99C291C1719B3004FF8F9 /* PBXTargetDependency */,
+			);
+			name = WakaTimeAPIClientTests;
+			productName = WakaTimeAPIClientTests;
+			productReference = 07A99C271C1719B3004FF8F9 /* WakaTimeAPIClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07A99C101C1719B3004FF8F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = giginet;
+				TargetAttributes = {
+					07A99C171C1719B3004FF8F9 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					07A99C261C1719B3004FF8F9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 07A99C171C1719B3004FF8F9;
+					};
+				};
+			};
+			buildConfigurationList = 07A99C131C1719B3004FF8F9 /* Build configuration list for PBXProject "WakaTimeAPIClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07A99C0F1C1719B3004FF8F9;
+			productRefGroup = 07A99C191C1719B3004FF8F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07A99C171C1719B3004FF8F9 /* WakaTimeAPIClient */,
+				07A99C261C1719B3004FF8F9 /* WakaTimeAPIClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07A99C161C1719B3004FF8F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A99C1E1C1719B3004FF8F9 /* Assets.xcassets in Resources */,
+				07A99C211C1719B3004FF8F9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07A99C251C1719B3004FF8F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07A99C141C1719B3004FF8F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A99C1C1C1719B3004FF8F9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07A99C231C1719B3004FF8F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A99C2C1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07A99C291C1719B3004FF8F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07A99C171C1719B3004FF8F9 /* WakaTimeAPIClient */;
+			targetProxy = 07A99C281C1719B3004FF8F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07A99C1F1C1719B3004FF8F9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07A99C201C1719B3004FF8F9 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07A99C2E1C1719B3004FF8F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07A99C2F1C1719B3004FF8F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		07A99C311C1719B3004FF8F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WakaTimeAPIClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.giginet.WakaTimeAPIClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07A99C321C1719B3004FF8F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WakaTimeAPIClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.giginet.WakaTimeAPIClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07A99C341C1719B3004FF8F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WakaTimeAPIClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.giginet.WakaTimeAPIClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakaTimeAPIClient.app/Contents/MacOS/WakaTimeAPIClient";
+			};
+			name = Debug;
+		};
+		07A99C351C1719B3004FF8F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WakaTimeAPIClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.giginet.WakaTimeAPIClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakaTimeAPIClient.app/Contents/MacOS/WakaTimeAPIClient";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07A99C131C1719B3004FF8F9 /* Build configuration list for PBXProject "WakaTimeAPIClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A99C2E1C1719B3004FF8F9 /* Debug */,
+				07A99C2F1C1719B3004FF8F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07A99C301C1719B3004FF8F9 /* Build configuration list for PBXNativeTarget "WakaTimeAPIClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A99C311C1719B3004FF8F9 /* Debug */,
+				07A99C321C1719B3004FF8F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07A99C331C1719B3004FF8F9 /* Build configuration list for PBXNativeTarget "WakaTimeAPIClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A99C341C1719B3004FF8F9 /* Debug */,
+				07A99C351C1719B3004FF8F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07A99C101C1719B3004FF8F9 /* Project object */;
+}
