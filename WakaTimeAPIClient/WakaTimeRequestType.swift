@@ -1,5 +1,6 @@
 import Foundation
 import APIKit
+import ObjectMapper
 
 enum WakaTimeAPIClientError: ErrorType {
     case APIKeyNotDefined
@@ -30,14 +31,9 @@ extension WakaTimeRequestType {
         URLRequest.setValue("Basic \(encryptedKey)", forHTTPHeaderField: "Authorization")
         return URLRequest
     }
-    
-    func errorFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> ErrorType? {
-        return nil
-    }
 }
 
 struct DurationRequest: WakaTimeRequestType {
-    typealias Response = Duration
     let date: NSDate
     var apiKey: String?
     
@@ -60,12 +56,13 @@ struct DurationRequest: WakaTimeRequestType {
         return formatter.stringFromDate(date)
     }
     
-    func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {
+    func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Duration? {
         guard let dictionary = object as? [String: AnyObject] else {
             return nil
         }
         
-        guard let duration = Duration(dictionary: dictionary) else {
+        let mapper = Mapper<Duration>()
+        guard let duration = mapper.map(dictionary) else {
             return nil
         }
         return duration

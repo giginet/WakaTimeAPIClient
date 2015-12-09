@@ -4,3 +4,6 @@
 [submodule "Carthage/Checkouts/APIKit"]
 	path = Carthage/Checkouts/APIKit
 	url = https://github.com/ishkawa/APIKit.git
+[submodule "Carthage/Checkouts/ObjectMapper"]
+	path = Carthage/Checkouts/ObjectMapper
+	url = https://github.com/Hearst-DD/ObjectMapper.git

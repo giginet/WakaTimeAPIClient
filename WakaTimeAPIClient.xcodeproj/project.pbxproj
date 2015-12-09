@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		077AF51D1C185EA600BD655E /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 077AF51B1C185EA600BD655E /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		077AF51F1C1862C900BD655E /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF51E1C1862C900BD655E /* Base.swift */; };
+		077AF5201C1862C900BD655E /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF51E1C1862C900BD655E /* Base.swift */; };
 		07A99C1C1C1719B3004FF8F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A99C1B1C1719B3004FF8F9 /* AppDelegate.swift */; };
 		07A99C1E1C1719B3004FF8F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A99C1D1C1719B3004FF8F9 /* Assets.xcassets */; };
 		07A99C211C1719B3004FF8F9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A99C1F1C1719B3004FF8F9 /* MainMenu.xib */; };
@@ -35,6 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				077AF51D1C185EA600BD655E /* ObjectMapper.framework in Embed Frameworks */,
 				07A99C4D1C17252A004FF8F9 /* APIKit.framework in Embed Frameworks */,
 				07A99C4F1C17252A004FF8F9 /* Result.framework in Embed Frameworks */,
 			);
@@ -44,6 +48,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		077AF51B1C185EA600BD655E /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/Mac/ObjectMapper.framework; sourceTree = "<group>"; };
+		077AF51E1C1862C900BD655E /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Base.swift; path = Models/Base.swift; sourceTree = "<group>"; };
 		07A99C181C1719B3004FF8F9 /* WakaTimeAPIClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakaTimeAPIClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A99C1B1C1719B3004FF8F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07A99C1D1C1719B3004FF8F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,9 +82,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		077AF51A1C185DA700BD655E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07A99C501C18560F004FF8F9 /* Duration.swift */,
+				077AF51E1C1862C900BD655E /* Base.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		07A99C0F1C1719B3004FF8F9 = {
 			isa = PBXGroup;
 			children = (
+				077AF51B1C185EA600BD655E /* ObjectMapper.framework */,
 				07A99C4A1C17252A004FF8F9 /* APIKit.framework */,
 				07A99C4B1C17252A004FF8F9 /* Result.framework */,
 				07A99C1A1C1719B3004FF8F9 /* WakaTimeAPIClient */,
@@ -99,12 +115,12 @@
 		07A99C1A1C1719B3004FF8F9 /* WakaTimeAPIClient */ = {
 			isa = PBXGroup;
 			children = (
+				077AF51A1C185DA700BD655E /* Models */,
 				07A99C1B1C1719B3004FF8F9 /* AppDelegate.swift */,
 				07A99C1D1C1719B3004FF8F9 /* Assets.xcassets */,
 				07A99C1F1C1719B3004FF8F9 /* MainMenu.xib */,
 				07A99C221C1719B3004FF8F9 /* Info.plist */,
 				07A99C361C17203E004FF8F9 /* WakaTimeRequestType.swift */,
-				07A99C501C18560F004FF8F9 /* Duration.swift */,
 			);
 			path = WakaTimeAPIClient;
 			sourceTree = "<group>";
@@ -219,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077AF51F1C1862C900BD655E /* Base.swift in Sources */,
 				07A99C511C18560F004FF8F9 /* Duration.swift in Sources */,
 				07A99C371C17203E004FF8F9 /* WakaTimeRequestType.swift in Sources */,
 				07A99C1C1C1719B3004FF8F9 /* AppDelegate.swift in Sources */,
@@ -229,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077AF5201C1862C900BD655E /* Base.swift in Sources */,
 				07A99C381C17203E004FF8F9 /* WakaTimeRequestType.swift in Sources */,
 				07A99C2C1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift in Sources */,
 			);

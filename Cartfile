@@ -1,1 +1,2 @@
 github "ishkawa/APIKit" ~> 1.0.0
+github "Hearst-DD/ObjectMapper" ~> 1.0.1
