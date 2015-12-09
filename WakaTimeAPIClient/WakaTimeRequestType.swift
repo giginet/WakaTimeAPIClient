@@ -11,7 +11,7 @@ protocol WakaTimeRequestType: RequestType {
     var apiKey: String? { get set }
 }
 
-extension WakaTimeRequestType {
+extension WakaTimeRequestType where Response: Mappable {
     var method: HTTPMethod {
         return .GET
     }
@@ -31,9 +31,22 @@ extension WakaTimeRequestType {
         URLRequest.setValue("Basic \(encryptedKey)", forHTTPHeaderField: "Authorization")
         return URLRequest
     }
+    
+    func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {
+        guard let dictionary = object as? [String: AnyObject] else {
+            return nil
+        }
+        
+        let mapper = Mapper<Response>()
+        guard let duration = mapper.map(dictionary) else {
+            return nil
+        }
+        return duration
+    }
 }
 
 struct DurationRequest: WakaTimeRequestType {
+    typealias Response = Duration
     let date: NSDate
     var apiKey: String?
     
@@ -54,17 +67,5 @@ struct DurationRequest: WakaTimeRequestType {
         let formatter = NSDateFormatter()
         formatter.dateFormat = "MM/dd/yyyy"
         return formatter.stringFromDate(date)
-    }
-    
-    func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Duration? {
-        guard let dictionary = object as? [String: AnyObject] else {
-            return nil
-        }
-        
-        let mapper = Mapper<Duration>()
-        guard let duration = mapper.map(dictionary) else {
-            return nil
-        }
-        return duration
     }
 }
