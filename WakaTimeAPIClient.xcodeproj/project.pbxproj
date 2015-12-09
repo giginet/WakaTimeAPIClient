@@ -13,10 +13,9 @@
 		07A99C2C1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A99C2B1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift */; };
 		07A99C371C17203E004FF8F9 /* WakaTimeRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A99C361C17203E004FF8F9 /* WakaTimeRequestType.swift */; };
 		07A99C381C17203E004FF8F9 /* WakaTimeRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A99C361C17203E004FF8F9 /* WakaTimeRequestType.swift */; };
-		07A99C4C1C17252A004FF8F9 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A99C4A1C17252A004FF8F9 /* APIKit.framework */; };
 		07A99C4D1C17252A004FF8F9 /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07A99C4A1C17252A004FF8F9 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		07A99C4E1C17252A004FF8F9 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A99C4B1C17252A004FF8F9 /* Result.framework */; };
 		07A99C4F1C17252A004FF8F9 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07A99C4B1C17252A004FF8F9 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		07A99C511C18560F004FF8F9 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A99C501C18560F004FF8F9 /* Duration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +55,7 @@
 		07A99C361C17203E004FF8F9 /* WakaTimeRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WakaTimeRequestType.swift; sourceTree = "<group>"; };
 		07A99C4A1C17252A004FF8F9 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/Mac/APIKit.framework; sourceTree = "<group>"; };
 		07A99C4B1C17252A004FF8F9 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		07A99C501C18560F004FF8F9 /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Duration.swift; path = Models/Duration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07A99C4C1C17252A004FF8F9 /* APIKit.framework in Frameworks */,
-				07A99C4E1C17252A004FF8F9 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +104,7 @@
 				07A99C1F1C1719B3004FF8F9 /* MainMenu.xib */,
 				07A99C221C1719B3004FF8F9 /* Info.plist */,
 				07A99C361C17203E004FF8F9 /* WakaTimeRequestType.swift */,
+				07A99C501C18560F004FF8F9 /* Duration.swift */,
 			);
 			path = WakaTimeAPIClient;
 			sourceTree = "<group>";
@@ -220,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A99C511C18560F004FF8F9 /* Duration.swift in Sources */,
 				07A99C371C17203E004FF8F9 /* WakaTimeRequestType.swift in Sources */,
 				07A99C1C1C1719B3004FF8F9 /* AppDelegate.swift in Sources */,
 			);
