@@ -20,7 +20,7 @@ extension WakaTimeRequestType {
             throw WakaTimeAPIClientError.APIKeyNotDefined
         }
         
-        guard let data = self.apiKey?.dataUsingEncoding(NSUTF8StringEncoding) else {
+        guard let data = apiKey.dataUsingEncoding(NSUTF8StringEncoding) else {
             throw WakaTimeAPIClientError.AuthenticationFailure
         }
         let encryptedKey = data.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
