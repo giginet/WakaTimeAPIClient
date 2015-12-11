@@ -1,7 +1,7 @@
 import Foundation
 
 public struct DurationRequest: WakaTimeRequestType {
-    public typealias Response = Duration
+    public typealias Response = [Duration]
     public var apiKey: String?
     let date: NSDate
     

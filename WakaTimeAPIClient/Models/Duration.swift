@@ -2,17 +2,17 @@ import Foundation
 import ObjectMapper
 
 public struct Duration: Mappable {
-    var start: NSDate?
-    var end: NSDate?
-    var branches: [String]?
+    var project: String!
+    var time: NSDate!
+    var duration: Float!
     
     public init?(_ map: Map) {
     }
     
     public mutating func mapping(map: Map) {
-        branches <- map["branches"]
-        start <- (map["start"], DateTransform())
-        end <- (map["end"], DateTransform())
+        self.project <- map["project"]
+        self.time <- (map["time"], DateTransform())
+        self.duration <- map["duration"]
     }
     
 }

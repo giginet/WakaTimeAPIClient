@@ -11,7 +11,7 @@ public protocol WakaTimeRequestType: RequestType {
     var apiKey: String? { get set }
 }
 
-extension WakaTimeRequestType where Response: Mappable {    
+public extension WakaTimeRequestType where Self.Response: CollectionType, Self.Response.Generator.Element: Mappable {
     public var method: HTTPMethod {
         return .GET
     }
@@ -37,10 +37,18 @@ extension WakaTimeRequestType where Response: Mappable {
             return nil
         }
         
-        let mapper = Mapper<Response>()
-        guard let duration = mapper.map(dictionary) else {
+        guard let data = dictionary["data"] as? [AnyObject] else {
             return nil
         }
-        return duration
+        
+        var objects: Array<Self.Response.Generator.Element> = []
+        for objectDictionary in data {
+            let mapper = Mapper<Response.Generator.Element>()
+            guard let object = mapper.map(objectDictionary) else {
+                continue
+            }
+            objects.append(object)
+        }
+        return objects as? Self.Response
     }
 }

@@ -10,8 +10,8 @@ public struct User: Mappable {
     }
     
     public mutating func mapping(map: Map) {
-        self.createdAt <- (map["data.0.created_at"], ISO8601DateTransform())
-        self.email <- map["data.0.email"]
-        self.username <- map["data.0.username"]
+        self.createdAt <- (map["created_at"], ISO8601DateTransform())
+        self.email <- map["email"]
+        self.username <- map["username"]
     }    
 }
