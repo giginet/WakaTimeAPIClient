@@ -2,25 +2,25 @@ import Foundation
 import APIKit
 import ObjectMapper
 
-enum WakaTimeAPIClientError: ErrorType {
+public enum WakaTimeAPIClientError: ErrorType {
     case APIKeyNotDefined
     case AuthenticationFailure
 }
 
-protocol WakaTimeRequestType: RequestType {
+public protocol WakaTimeRequestType: RequestType {
     var apiKey: String? { get set }
 }
 
 extension WakaTimeRequestType where Response: Mappable {
-    var method: HTTPMethod {
+    public var method: HTTPMethod {
         return .GET
     }
     
-    var baseURL: NSURL {
+    public var baseURL: NSURL {
         return NSURL(string: "https://wakatime.com/api/v1/")!
     }
     
-    func configureURLRequest(URLRequest: NSMutableURLRequest) throws -> NSMutableURLRequest {
+    public func configureURLRequest(URLRequest: NSMutableURLRequest) throws -> NSMutableURLRequest {
         guard let apiKey = self.apiKey else {
             throw WakaTimeAPIClientError.APIKeyNotDefined
         }
@@ -32,7 +32,7 @@ extension WakaTimeRequestType where Response: Mappable {
         return URLRequest
     }
     
-    func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {
+    public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {
         guard let dictionary = object as? [String: AnyObject] else {
             return nil
         }
@@ -45,20 +45,20 @@ extension WakaTimeRequestType where Response: Mappable {
     }
 }
 
-struct DurationRequest: WakaTimeRequestType {
-    typealias Response = Duration
+public struct DurationRequest: WakaTimeRequestType {
+    public typealias Response = Duration
     let date: NSDate
-    var apiKey: String?
+    public var apiKey: String?
     
-    init(date: NSDate) {
+    public init(date: NSDate) {
         self.date = date
     }
     
-    var path: String {
+    public var path: String {
         return "/users/current/durations"
     }
     
-    var parameters: [String: AnyObject] {
+    public var parameters: [String: AnyObject] {
         let dateString = self.dateStringFromDate(self.date)
         return ["date": dateString]
     }
