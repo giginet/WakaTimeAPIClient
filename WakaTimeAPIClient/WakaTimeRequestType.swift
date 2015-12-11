@@ -11,7 +11,7 @@ public protocol WakaTimeRequestType: RequestType {
     var apiKey: String? { get set }
 }
 
-extension WakaTimeRequestType where Response: Mappable {
+extension WakaTimeRequestType where Response: Mappable {    
     public var method: HTTPMethod {
         return .GET
     }
@@ -42,30 +42,5 @@ extension WakaTimeRequestType where Response: Mappable {
             return nil
         }
         return duration
-    }
-}
-
-public struct DurationRequest: WakaTimeRequestType {
-    public typealias Response = Duration
-    let date: NSDate
-    public var apiKey: String?
-    
-    public init(date: NSDate) {
-        self.date = date
-    }
-    
-    public var path: String {
-        return "/users/current/durations"
-    }
-    
-    public var parameters: [String: AnyObject] {
-        let dateString = self.dateStringFromDate(self.date)
-        return ["date": dateString]
-    }
-    
-    private func dateStringFromDate(date: NSDate) -> String {
-        let formatter = NSDateFormatter()
-        formatter.dateFormat = "MM/dd/yyyy"
-        return formatter.stringFromDate(date)
     }
 }

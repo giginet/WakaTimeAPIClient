@@ -7,20 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		077AF5201C1862C900BD655E /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF51E1C1862C900BD655E /* Base.swift */; };
 		077AF5891C1AEA3500BD655E /* WakaTimeAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 077AF5881C1AEA3500BD655E /* WakaTimeAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		077AF58B1C1AEF9300BD655E /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A99C501C18560F004FF8F9 /* Duration.swift */; };
-		077AF58C1C1AEF9300BD655E /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF51E1C1862C900BD655E /* Base.swift */; };
 		077AF58D1C1AEF9300BD655E /* WakaTimeRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A99C361C17203E004FF8F9 /* WakaTimeRequestType.swift */; };
+		077AF5951C1B050800BD655E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF5941C1B050800BD655E /* User.swift */; };
+		077AF5961C1B050800BD655E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF5941C1B050800BD655E /* User.swift */; };
+		077AF5981C1B071100BD655E /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF5971C1B071100BD655E /* UserRequest.swift */; };
+		077AF59B1C1B071F00BD655E /* DurationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF59A1C1B071F00BD655E /* DurationRequest.swift */; };
 		07A99C2C1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A99C2B1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift */; };
 		07A99C381C17203E004FF8F9 /* WakaTimeRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A99C361C17203E004FF8F9 /* WakaTimeRequestType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		077AF51E1C1862C900BD655E /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Base.swift; path = Models/Base.swift; sourceTree = "<group>"; };
 		077AF54A1C1AE75900BD655E /* WakaTimeAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WakaTimeAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		077AF5881C1AEA3500BD655E /* WakaTimeAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WakaTimeAPIClient.h; sourceTree = "<group>"; };
-		077AF58A1C1AEA6700BD655E /* Demo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Demo.playground; sourceTree = "<group>"; };
+		077AF5941C1B050800BD655E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		077AF5971C1B071100BD655E /* UserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserRequest.swift; path = Requests/UserRequest.swift; sourceTree = "<group>"; };
+		077AF59A1C1B071F00BD655E /* DurationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationRequest.swift; sourceTree = "<group>"; };
 		07A99C221C1719B3004FF8F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07A99C271C1719B3004FF8F9 /* WakaTimeAPIClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakaTimeAPIClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A99C2B1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakaTimeAPIClientTests.swift; sourceTree = "<group>"; };
@@ -51,15 +54,24 @@
 			isa = PBXGroup;
 			children = (
 				07A99C501C18560F004FF8F9 /* Duration.swift */,
-				077AF51E1C1862C900BD655E /* Base.swift */,
+				077AF5941C1B050800BD655E /* User.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		077AF5991C1B071600BD655E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				07A99C361C17203E004FF8F9 /* WakaTimeRequestType.swift */,
+				077AF5971C1B071100BD655E /* UserRequest.swift */,
+				077AF59A1C1B071F00BD655E /* DurationRequest.swift */,
+			);
+			name = Requests;
 			sourceTree = "<group>";
 		};
 		07A99C0F1C1719B3004FF8F9 = {
 			isa = PBXGroup;
 			children = (
-				077AF58A1C1AEA6700BD655E /* Demo.playground */,
 				07A99C1A1C1719B3004FF8F9 /* WakaTimeAPIClient */,
 				07A99C2A1C1719B3004FF8F9 /* WakaTimeAPIClientTests */,
 				07A99C191C1719B3004FF8F9 /* Products */,
@@ -80,7 +92,7 @@
 			children = (
 				077AF51A1C185DA700BD655E /* Models */,
 				07A99C221C1719B3004FF8F9 /* Info.plist */,
-				07A99C361C17203E004FF8F9 /* WakaTimeRequestType.swift */,
+				077AF5991C1B071600BD655E /* Requests */,
 				077AF5881C1AEA3500BD655E /* WakaTimeAPIClient.h */,
 			);
 			path = WakaTimeAPIClient;
@@ -204,9 +216,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077AF5981C1B071100BD655E /* UserRequest.swift in Sources */,
 				077AF58B1C1AEF9300BD655E /* Duration.swift in Sources */,
-				077AF58C1C1AEF9300BD655E /* Base.swift in Sources */,
 				077AF58D1C1AEF9300BD655E /* WakaTimeRequestType.swift in Sources */,
+				077AF5951C1B050800BD655E /* User.swift in Sources */,
+				077AF59B1C1B071F00BD655E /* DurationRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,9 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				077AF5201C1862C900BD655E /* Base.swift in Sources */,
 				07A99C381C17203E004FF8F9 /* WakaTimeRequestType.swift in Sources */,
 				07A99C2C1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift in Sources */,
+				077AF5961C1B050800BD655E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
