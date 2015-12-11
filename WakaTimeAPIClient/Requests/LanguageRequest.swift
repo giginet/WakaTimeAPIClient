@@ -16,6 +16,11 @@ public struct LanguageRequest: WakaTimeRequestType {
         return "/users/current/summaries"
     }
     
+    public var parameters: [String: AnyObject] {
+        return ["start": self.startDate.wk_formattedDateString(),
+            "end": self.endDate.wk_formattedDateString()]
+    }
+    
     public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {
         guard let dictionary = object as? [String: AnyObject] else {
             return nil
@@ -26,8 +31,10 @@ public struct LanguageRequest: WakaTimeRequestType {
         guard let data = dictionary["data"] else {
             return nil
         }
+        print(data)
         
-        guard let duration = mapper.map(data[0]["languages"]) else {
+
+        guard let duration = mapper.map(data["languages"]) else {
             return nil
         }
         return duration

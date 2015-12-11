@@ -14,13 +14,7 @@ public struct DurationRequest: WakaTimeRequestType {
     }
     
     public var parameters: [String: AnyObject] {
-        let dateString = self.dateStringFromDate(self.date)
+        let dateString = self.date.wk_formattedDateString()
         return ["date": dateString]
-    }
-    
-    private func dateStringFromDate(date: NSDate) -> String {
-        let formatter = NSDateFormatter()
-        formatter.dateFormat = "MM/dd/yyyy"
-        return formatter.stringFromDate(date)
     }
 }

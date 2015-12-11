@@ -20,6 +20,8 @@
 		077AF5A41C1B0A5300BD655E /* WakaTimeRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF5A01C1B0A5300BD655E /* WakaTimeRequestType.swift */; };
 		077AF5A61C1B0A6000BD655E /* LanguageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF5A51C1B0A6000BD655E /* LanguageRequest.swift */; };
 		077AF5A71C1B0A6000BD655E /* LanguageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF5A51C1B0A6000BD655E /* LanguageRequest.swift */; };
+		077AF5D71C1B0D7100BD655E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF5D61C1B0D7100BD655E /* Utils.swift */; };
+		077AF5D81C1B0D7100BD655E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF5D61C1B0D7100BD655E /* Utils.swift */; };
 		07A99C2C1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A99C2B1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,7 @@
 		077AF59F1C1B0A5300BD655E /* DurationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DurationRequest.swift; path = Requests/DurationRequest.swift; sourceTree = "<group>"; };
 		077AF5A01C1B0A5300BD655E /* WakaTimeRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WakaTimeRequestType.swift; path = Requests/WakaTimeRequestType.swift; sourceTree = "<group>"; };
 		077AF5A51C1B0A6000BD655E /* LanguageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LanguageRequest.swift; path = Requests/LanguageRequest.swift; sourceTree = "<group>"; };
+		077AF5D61C1B0D7100BD655E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		07A99C221C1719B3004FF8F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07A99C271C1719B3004FF8F9 /* WakaTimeAPIClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakaTimeAPIClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A99C2B1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakaTimeAPIClientTests.swift; sourceTree = "<group>"; };
@@ -103,6 +106,7 @@
 				07A99C221C1719B3004FF8F9 /* Info.plist */,
 				077AF5991C1B071600BD655E /* Requests */,
 				077AF5881C1AEA3500BD655E /* WakaTimeAPIClient.h */,
+				077AF5D61C1B0D7100BD655E /* Utils.swift */,
 			);
 			path = WakaTimeAPIClient;
 			sourceTree = "<group>";
@@ -232,6 +236,7 @@
 				077AF5951C1B050800BD655E /* User.swift in Sources */,
 				077AF5A31C1B0A5300BD655E /* WakaTimeRequestType.swift in Sources */,
 				077AF5A11C1B0A5300BD655E /* DurationRequest.swift in Sources */,
+				077AF5D71C1B0D7100BD655E /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +247,7 @@
 				077AF59E1C1B097C00BD655E /* Language.swift in Sources */,
 				07A99C2C1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift in Sources */,
 				077AF5961C1B050800BD655E /* User.swift in Sources */,
+				077AF5D81C1B0D7100BD655E /* Utils.swift in Sources */,
 				077AF5A71C1B0A6000BD655E /* LanguageRequest.swift in Sources */,
 				077AF5A21C1B0A5300BD655E /* DurationRequest.swift in Sources */,
 				077AF5A41C1B0A5300BD655E /* WakaTimeRequestType.swift in Sources */,
