@@ -6,7 +6,6 @@ public struct Language: Mappable {
     public var totalSeconds: Int!
     public var percent: Float!
     
-    
     public init?(_ map: Map) {
     }
     

@@ -51,7 +51,9 @@ public extension WakaTimeRequestType where Self.Response: Mappable {
     }
 }
 
-public extension WakaTimeRequestType where Self.Response: CollectionType, Self.Response.Generator.Element: Mappable {
+public extension WakaTimeRequestType
+where Self.Response: CollectionType,
+Self.Response.Generator.Element: Mappable {
     public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {
         guard let dictionary = object as? [String: AnyObject] else {
             return nil
@@ -61,7 +63,7 @@ public extension WakaTimeRequestType where Self.Response: CollectionType, Self.R
             return nil
         }
         
-        var objects: Array<Self.Response.Generator.Element> = []
+        var objects: [Self.Response.Generator.Element] = []
         for objectDictionary in data {
             let mapper = Mapper<Response.Generator.Element>()
             guard let object = mapper.map(objectDictionary) else {

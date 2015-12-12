@@ -10,8 +10,7 @@ public struct StatRequest: WakaTimeRequestType {
         case LastYear = "last_year"
         case AllTime = "all_time"
     }
-    
-    
+        
     public typealias Response = Stat
     public var apiKey: String?
     let range: Range

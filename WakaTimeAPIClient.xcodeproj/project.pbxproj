@@ -24,6 +24,9 @@
 		077AF5D81C1B0D7100BD655E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF5D61C1B0D7100BD655E /* Utils.swift */; };
 		07A99C2C1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A99C2B1C1719B3004FF8F9 /* WakaTimeAPIClientTests.swift */; };
 		07D171001C1C5CB1008DE849 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D170FF1C1C5CB1008DE849 /* Stat.swift */; };
+		07D171471C1C6FAE008DE849 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D171441C1C6FAE008DE849 /* APIKit.framework */; };
+		07D171481C1C6FAE008DE849 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D171451C1C6FAE008DE849 /* ObjectMapper.framework */; };
+		07D171491C1C6FAE008DE849 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D171461C1C6FAE008DE849 /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		07A99C2D1C1719B3004FF8F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07A99C501C18560F004FF8F9 /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Duration.swift; path = Models/Duration.swift; sourceTree = "<group>"; };
 		07D170FF1C1C5CB1008DE849 /* Stat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stat.swift; path = Requests/Stat.swift; sourceTree = "<group>"; };
+		07D171441C1C6FAE008DE849 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = "../../Develop/Debug-iphoneos/APIKit.framework"; sourceTree = "<group>"; };
+		07D171451C1C6FAE008DE849 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../Develop/Debug-iphoneos/ObjectMapper.framework"; sourceTree = "<group>"; };
+		07D171461C1C6FAE008DE849 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../Develop/Debug-iphoneos/Result.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D171471C1C6FAE008DE849 /* APIKit.framework in Frameworks */,
+				07D171481C1C6FAE008DE849 /* ObjectMapper.framework in Frameworks */,
+				07D171491C1C6FAE008DE849 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +96,9 @@
 		07A99C0F1C1719B3004FF8F9 = {
 			isa = PBXGroup;
 			children = (
+				07D171441C1C6FAE008DE849 /* APIKit.framework */,
+				07D171451C1C6FAE008DE849 /* ObjectMapper.framework */,
+				07D171461C1C6FAE008DE849 /* Result.framework */,
 				07A99C1A1C1719B3004FF8F9 /* WakaTimeAPIClient */,
 				07A99C2A1C1719B3004FF8F9 /* WakaTimeAPIClientTests */,
 				07A99C191C1719B3004FF8F9 /* Products */,
