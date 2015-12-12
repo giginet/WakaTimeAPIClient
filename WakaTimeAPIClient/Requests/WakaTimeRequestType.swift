@@ -11,7 +11,7 @@ public protocol WakaTimeRequestType: RequestType {
     var apiKey: String? { get set }
 }
 
-public extension WakaTimeRequestType where Self.Response: CollectionType, Self.Response.Generator.Element: Mappable {
+public extension WakaTimeRequestType {
     public var method: HTTPMethod {
         return .GET
     }
@@ -31,7 +31,27 @@ public extension WakaTimeRequestType where Self.Response: CollectionType, Self.R
         URLRequest.setValue("Basic \(encryptedKey)", forHTTPHeaderField: "Authorization")
         return URLRequest
     }
-    
+}
+
+public extension WakaTimeRequestType where Self.Response: Mappable {
+    public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {
+        guard let dictionary = object as? [String: AnyObject] else {
+            return nil
+        }
+        
+        guard let data = dictionary["data"] as? [String: AnyObject] else {
+            return nil
+        }
+        
+        let mapper = Mapper<Response>()
+        guard let object = mapper.map(data) else {
+            return nil
+        }
+        return object
+    }
+}
+
+public extension WakaTimeRequestType where Self.Response: CollectionType, Self.Response.Generator.Element: Mappable {
     public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {
         guard let dictionary = object as? [String: AnyObject] else {
             return nil
